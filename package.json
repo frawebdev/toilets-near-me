@@ -1,0 +1,29 @@
+{
+  "name": "toilets-near-me",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@capacitor/android": "^3.2.5",
+    "@capacitor/core": "^3.2.5",
+    "@capacitor/geolocation": "^1.1.2",
+    "@googlemaps/js-api-loader": "^1.12.6",
+    "@nuxtjs/axios": "^5.13.6",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "vue-star-rating": "^1.7.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^3.2.5",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@nuxtjs/fontawesome": "^1.1.2",
+    "@nuxtjs/tailwindcss": "^4.2.0",
+    "postcss": "^8.3.5"
+  }
+}
