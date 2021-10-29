@@ -1,6 +1,6 @@
 <template>
 <div>
-    <div v-if="toilets">
+    <div v-if="toilets" class="m-8 p-4 border-4 rounded border-red-400 shadow">
     <ul v-for="toilet in toilets" :key="toilet.place_id">
         <ListElement :toiletData="toilet"/>
     </ul>

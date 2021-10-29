@@ -16,12 +16,13 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {  }
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' }
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/css/main'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -35,12 +36,22 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/google-fonts'
   ],
+
+  googleFonts: {
+    families: {
+      'Londrina+Solid': [100, 400]
+    }
+  },
 
   fontawesome: {
     icons: {
-      solid: [ 'faSpinner' ]
+      solid: [ 
+        'faSpinner',
+        'faMapMarkerAlt'
+      ]
     }
   },
 
