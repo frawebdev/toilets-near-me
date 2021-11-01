@@ -3,7 +3,7 @@
         <div id="map" class="h-80 w-full">
 
         </div>
-        <Reviews :reviews="reviews"/>
+        <ReviewSlider :items="reviews"/>
     </main>
 </template>
 
@@ -19,7 +19,8 @@ export default {
             lng: null,
             currentLat: null,
             currentLng: null,
-            reviews: null
+            reviews: null,
+            photos: null
         }
     },
     async mounted() {
@@ -30,6 +31,7 @@ export default {
         this.lat = await this.$store.state.singleToilet.geometry.location.lat
         this.lng = await this.$store.state.singleToilet.geometry.location.lng
         this.reviews = await this.$store.state.singleToilet.reviews
+        this.photos = await this.$store.state.singleToilet.photos
 
         this.currentLat = await this.$store.state.lat
         this.currentLng = await this.$store.state.lng

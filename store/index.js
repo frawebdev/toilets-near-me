@@ -40,9 +40,6 @@ export const actions = {
     },
     async getCurrentPosition({ commit }) {
         let coords = await Geolocation.getCurrentPosition()
-        setInterval(() => {
-            coords = Geolocation.getCurrentPosition()
-        }, 5000)
         commit('getCurrentPosition', coords.coords)
     }
 }
