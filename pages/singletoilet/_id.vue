@@ -1,9 +1,10 @@
 <template>
     <main>
-        <div id="map" class="h-80 w-full">
+        <div id="map" class="h-96 w-full">
 
         </div>
         <ReviewSlider :items="reviews"/>
+        <PhotoSlider :items="photos"/>
     </main>
 </template>
 
@@ -64,8 +65,6 @@ export default {
                     travelMode: "WALKING"
                 },
                 (res, status) => {
-                    console.log(res)
-                    console.log(status)
                     if(status == 'OK') {
                         directionsRender.setDirections(res)
                     }

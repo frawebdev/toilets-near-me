@@ -72,5 +72,9 @@ export default {
 
   env: {
     mapsApiKey: 'AIzaSyDOe9lVLhQt8Vo3zPXxMO0nRP1TcTNnpiE'
+  },
+
+  publicRuntimeConfig: {
+    apiKey: process.env.mapsApiKey
   }
 }
