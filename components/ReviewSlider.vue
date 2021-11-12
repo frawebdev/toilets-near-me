@@ -1,5 +1,5 @@
 <template>
-    <slider animation="fade" interval=8000 height="300px">
+    <slider animation="fade" interval=8000 height="200px" :control-btn="false" class="m-4 shadow">
         <slider-item
             v-for="item in items"
             :key="item"
