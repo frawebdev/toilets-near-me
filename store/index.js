@@ -29,7 +29,7 @@ export const mutations = {
 
 export const actions = {
     async getToilets({ commit }, [lat, long]) {
-        await axios.get( baseUrl + '/place/nearbysearch/json?location=' + lat + '%2C' + long + '&radius=1500&type=point_of_interest&keyword=toilet&key=' + process.env.mapsApiKey)
+        await axios.get( baseUrl + '/place/nearbysearch/json?location=' + lat + '%2C' + long + '&radius=1000&type=point_of_interest&keyword=toilet&key=' + process.env.mapsApiKey)
         .then(res => {
             commit('getToilets', res.data.results)
         })
