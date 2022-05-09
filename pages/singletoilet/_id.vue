@@ -47,7 +47,7 @@ export default {
         }, 5000)
 
         this.mapLoader = new Loader({
-            apiKey: 'AIzaSyDOe9lVLhQt8Vo3zPXxMO0nRP1TcTNnpiE',
+            apiKey: 'KEY',
             version: 'weekly',
             libraries: ['places']
         })
